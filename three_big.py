@@ -21,7 +21,9 @@ def crawl_three(date):
         new_df=new_df[cols]
 
         print('當日交易ID筆數',len(new_df))
-        new_df.to_csv('stock_three_3650.csv',mode='a',encoding='utf-8-sig', index=0,header=0)
+
+        #收集資料時再開
+        #new_df.to_csv('stock_three_3650.csv',mode='a',encoding='utf-8-sig', index=0,header=0)
 
         return new_df
 
