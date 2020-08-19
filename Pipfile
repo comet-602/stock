@@ -11,6 +11,8 @@ pandas = "*"
 numpy = "*"
 ipykernel = "*"
 matplotlib = "*"
+statsmodels = "*"
+seaborn = "*"
 
 [requires]
 python_version = "3.7"

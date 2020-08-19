@@ -25,10 +25,12 @@ def tot(year,season):
 
     # 判斷是否有多餘欄位
     for col in df.columns.values.tolist():
-        if col not in columns[1:]:
+        if col not in columns[1:] and col == '待註銷股本股數（單位：股）':
             print('無此欄位:',col)
             df=df.drop(col,axis=1)
-    
+       
+
+
     # 新增日期並調整欄位位置
     df['year_season']=str(year)+str(season)
     cols = df.columns.values.tolist()
