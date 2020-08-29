@@ -19,7 +19,7 @@ def checkVIF_new(df):
     return VIF
 
 if __name__ == "__main__":
-    df=pd.read_csv("income_clean.csv", encoding = 'utf-8')
+    df=pd.read_csv("data/income_clean.csv", encoding = 'utf-8')
     df=df.iloc[:,2:5]
     print(df.info())
     print(df.describe())

@@ -36,7 +36,7 @@ def tot(year,season):
     df=df[cols]
 
     # 存入CSV
-    df.to_csv('income_sheet.csv',mode='a',encoding='utf-8-sig', index=0, header=0)
+    df.to_csv('data/income_sheet.csv',mode='a',encoding='utf-8-sig', index=0, header=0)
     
     return print('筆數:',len(df['date']))
 
@@ -49,7 +49,7 @@ columns=['date','公司代號','公司名稱','營業收入','營業成本','營
 '綜合損益總額歸屬於非控制權益','基本每股盈餘（元）']
 
 df=pd.DataFrame(columns=columns)
-df.to_csv('income_sheet.csv',encoding='utf-8-sig',index=0)
+df.to_csv('data/income_sheet.csv',encoding='utf-8-sig',index=0)
 
 
 # 控制爬取年度與季

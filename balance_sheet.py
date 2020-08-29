@@ -38,7 +38,7 @@ def tot(year,season):
     df=df[cols]
 
     # 存入CSV
-    df.to_csv('balance_sheet.csv',mode='a',encoding='utf-8-sig', index=0, header=0)
+    df.to_csv('data/balance_sheet.csv',mode='a',encoding='utf-8-sig', index=0, header=0)
 
     return print('筆數:',len(df['year_season']))
 
@@ -48,7 +48,7 @@ columns=['year_season','公司代號', '公司名稱', '流動資產', '非流�
  '合併前非屬共同控制股權', '非控制權益', '權益總額', '預收股款（權益項下）之約當發行股數（單位：股）', '母公司暨子公司所持有之母公司庫藏股股數（單位：股）', '每股參考淨值']
 
 df=pd.DataFrame(columns=columns)
-df.to_csv('balance_sheet.csv',encoding='utf-8-sig',index=0)
+df.to_csv('data/balance_sheet.csv',encoding='utf-8-sig',index=0)
 
 # 控制爬取年度與季
 for year in range(102,110):

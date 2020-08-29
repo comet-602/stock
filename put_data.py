@@ -17,7 +17,7 @@ def crawl_price(date):
     ret['成交金額'] = ret['成交金額'].str.replace(',','')
     ret['成交股數'] = ret['成交股數'].str.replace(',','')
     ret['time']=date
-    ret.to_csv('stock1.csv',mode='a',encoding='utf-8-sig', header=0)
+    ret.to_csv('data/stock1.csv',mode='a',encoding='utf-8-sig', header=0)
     
     return ret
 

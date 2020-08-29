@@ -23,7 +23,7 @@ def crawl_three(date):
         print('當日交易ID筆數',len(new_df))
 
         #收集資料時再開
-        #new_df.to_csv('stock_three_3650.csv',mode='a',encoding='utf-8-sig', index=0,header=0)
+        #new_df.to_csv('data/stock_three_3650.csv',mode='a',encoding='utf-8-sig', index=0,header=0)
 
         return new_df
 
@@ -43,7 +43,7 @@ allow_continuous_fail_count = 5
 new_df=pd.DataFrame(columns=['time','證券代號','證券名稱','外陸資買進股數(不含外資自營商)','外陸資賣出股數(不含外資自營商)','外陸資買賣超股數(不含外資自營商)',
 '外資自營商買進股數','外資自營商賣出股數','外資自營商買賣超股數','投信買進股數','投信賣出股數','投信買賣超股數','自營商買賣超股數','自營商買進股數(自行買賣)','自營商賣出股數(自行買賣)',
 '自營商買賣超股數(自行買賣)','自營商買進股數(避險)','自營商賣出股數(避險)','自營商買賣超股數(避險)','三大法人買賣超股數'])
-new_df.to_csv('stock_three_3650.csv',encoding='utf-8-sig',index=0)
+new_df.to_csv('data/stock_three_3650.csv',encoding='utf-8-sig',index=0)
 while len(data) < n_days:
 
     print('parsing', date)
