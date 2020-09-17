@@ -15,6 +15,8 @@ statsmodels = "*"
 seaborn = "*"
 sklearn = "*"
 jupyter = "*"
+pyhdfs = "*"
+tqdm = "*"
 
 [requires]
 python_version = "3.7"
